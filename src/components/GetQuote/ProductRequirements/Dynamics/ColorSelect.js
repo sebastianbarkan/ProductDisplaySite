@@ -1,25 +1,23 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import { WoodImitation } from './WoodImitation';
-import { RALColors } from './RALColors';
+import { RALColors } from '../components/RALColors';
+import { WoodImitation } from '../components/WoodImitation';
 
-export default function Colors() {
-    {
-        /*
-    - Only 1 can be selected
-    -> White
-    -> Radio with Wood imitations
-    -> Form select with RAL colors
-    
+const ColorSelect = () => {
+    /*
+    Only 1 can be selected
+        -> White
+        -> Radio with Wood imitations
+        -> Form select with RAL colors
     */
-    }
     return (
-        <div id="color-picker">
-            <h6>Desired Color</h6>
+        <div id="color-select">
+            <h5>Desired color</h5>
 
             <Form.Check label="White" />
 
-            <div id="wood-imitation">
+            <p>Wood Imitation</p>
+            <div className="wood-imitation">
                 {WoodImitation.map((item, index) => (
                     <Form.Check type="radio" id={item.name} key={index}>
                         <Form.Check.Input type="radio" id={item.name} />
@@ -31,6 +29,7 @@ export default function Colors() {
                 ))}
             </div>
 
+            <p>RAL Painting</p>
             <Form.Select aria-label="Default select example">
                 <option>RAL Painting</option>
                 {RALColors.map((item, index) => (
@@ -47,4 +46,6 @@ export default function Colors() {
             </Form.Select>
         </div>
     );
-}
+};
+
+export default ColorSelect;

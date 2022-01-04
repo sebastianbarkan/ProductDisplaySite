@@ -56,17 +56,11 @@ const dummyData = [
 
 const QuoteDetails = () => {
     return (
-        <div>
+        <div id="quote-details">
             <h4 className="text-center">Your Quote</h4>
             <div className="dropdown-divider w-25 mx-auto mb-3" />
 
-            <div className="text-center mb-3">
-                <h5>Empty</h5>
-                <br />
-                OR
-            </div>
-
-            <Accordion className="requested-list" defaultActiveKey="0">
+            <Accordion defaultActiveKey="0">
                 {dummyData.map((item, index) => (
                     <Accordion.Item eventKey={index} key={index}>
                         <Accordion.Header>{item.productName}</Accordion.Header>

@@ -1,4 +1,6 @@
-export const products = [
+import React from 'react';
+
+const products = [
     {
         image: 'https://adecris.ro/wp-content/gallery/tamplarie-pvc/2.jpg',
         name: 'PVC Joinery'
@@ -48,3 +50,27 @@ export const products = [
         name: 'Aluminium Ornamental Panel'
     }
 ];
+
+const Products = ({ activeProduct, setActiveProduct }) => {
+    return (
+        <div id="product-list">
+            <h4 className="text-center">Select desired product</h4>
+            <div className="dropdown-divider w-25 mx-auto mb-4" />
+
+            <ul>
+                {products.map((item, index) => (
+                    <li
+                        className={activeProduct === item.name ? 'active' : ''}
+                        onClick={() => setActiveProduct(item.name)}
+                        key={index}
+                    >
+                        <img src={item.image} alt="" />
+                        <div>{item.name}</div>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default Products;

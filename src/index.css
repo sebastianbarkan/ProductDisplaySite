@@ -1,6 +1,19 @@
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
+    padding: 0;
+    background-color: #252525;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background: #191919;
+}
+
+.dropdown-divider {
+    border-color: white;
+}
+
+.dropdown-divider.gray {
+    border-color: rgb(104, 104, 104);
 }
