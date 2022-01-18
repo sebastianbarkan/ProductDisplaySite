@@ -1,32 +1,41 @@
 import React from 'react';
 import PVCJoinery from './pvc-joinery';
-
+import AluminiumJoinery from './AluminiumJoinery';
+import WoodJoinery from './WoodJoinery';
+import Glass from './glass';
+import Railway from './Railway';
+import ExteriorRoller from './ExteriorRoller'
+import TextileRoller from './TextileRoller';
+import InsectNet from './InsectNet';
+import Blinds from './Blinds';
+import Canopy from './Canopy';
+import OrnamentalPanel from './OrnamentalPanel';
 const ProductRequirements = ({ activeProduct }) => {
     switch (activeProduct) {
         case 'PVC Joinery':
             return <PVCJoinery />;
         case 'Aluminium Joinery':
-            return <h2>{activeProduct}</h2>;
+            return <AluminiumJoinery/>;
         case 'Laminated Wood Joinery':
-            return <h2>{activeProduct}</h2>;
+            return <WoodJoinery/>;
         case 'Glass':
-            return <h2>{activeProduct}</h2>;
+            return <Glass/>;
         case 'Railway':
-            return <h2>{activeProduct}</h2>;
+            return <Railway/>;
         case 'Garage Door':
             return <h2>{activeProduct}</h2>;
         case 'Exterior Roller':
-            return <h2>{activeProduct}</h2>;
+            return <ExteriorRoller/>;
         case 'Textile Roller':
-            return <h2>{activeProduct}</h2>;
+            return <TextileRoller/>;
         case 'Insect Nets':
-            return <h2>{activeProduct}</h2>;
+            return <InsectNet/>;
         case 'Canopy':
-            return <h2>{activeProduct}</h2>;
+            return <Canopy/>;
         case 'Blinds':
-            return <h2>{activeProduct}</h2>;
+            return <Blinds/>;
         case 'Aluminium Ornamental Panel':
-            return <h2>{activeProduct}</h2>;
+            return <OrnamentalPanel/>;
 
         default:
             break;

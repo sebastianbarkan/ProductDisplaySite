@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Products from './Products';
 import ProductRequirements from './ProductRequirements';
 import QuoteDetails from './QuoteDetails';
-import PersonalInfo from './PersonalInfo';
 import { QuoteStyles } from './quoteElements.js';
 
 export default function GetQuote() {
@@ -12,7 +11,6 @@ export default function GetQuote() {
     return (
         <QuoteStyles>
             <div className="container">
-                <form action="">
                     <div className="row">
                         <div className="col-lg-3 p-3" id="products-list">
                             <Products
@@ -26,13 +24,7 @@ export default function GetQuote() {
                             />
                         </div>
                     </div>
-
-                    <div className="py-4" />
-                    <QuoteDetails />
-                    <div className="py-4" />
-                    <PersonalInfo />
-                </form>
             </div>
         </QuoteStyles>
     );
-}
+} 
