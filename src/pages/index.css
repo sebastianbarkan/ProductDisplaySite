@@ -1,0 +1,785 @@
+* {
+    box-sizing:border-box;
+}
+
+body, html, h1, h2, h3, h4, p {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color:rgb(44, 44, 44);
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #F9F5EE;
+}
+
+.index-header{
+    background-color: blue;
+    margin: 0;
+    padding:.2em;
+}
+
+.index-template-wrap{
+    width: 100vw;
+    margin: 5% auto auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+.index-content-wrap{
+    display:grid;
+}
+
+.index-link-wrap{
+    margin: 5% auto auto auto;
+}
+
+.index-link{
+    margin:.5em;
+}
+
+.single-header{
+    background-color:#4dadd6;
+    display: flex;
+    align-items: center;
+    padding:2.5em;
+}
+.single-header-link{
+    color: white;
+    margin:0 1.3em 0 1.3em;
+    font-weight: 100;
+    font-size:1rem;
+    text-decoration: none;
+}
+
+#singleLogo{
+    margin-right:auto;
+    color: white;
+}
+
+#singleNumber{
+    padding:.7em 2em .7em 2em;
+    margin: 0 .5em 0 .5em;
+    background-color: #FFB72B;
+    border-radius:50px;
+    border: none;
+    color:white;
+}
+
+#singleNumver>h2{
+    font-weight: 100;
+}
+
+.single-background{
+    background-image: linear-gradient( rgba(0, 0, 0, .85), rgba(0, 0, 0, .85) ), url(http://friendlyarborrestoration.com/wp-content/uploads/2021/12/mathew-schwartz-8xhnoY5ua9o-unsplash-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+}
+
+.single-hero-content{
+    width: 65vw;
+    margin: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#singleHeroDescriptor{
+    color:white;
+    margin:2em 0 0 0;
+    font-size: 5rem;
+}
+
+#singleHeroLocation{
+    color:white;
+    font-size: 5rem;
+    margin: 0 0 1em 0;
+}
+
+#singleHeroLabel{
+    color:white
+}
+
+.single-business-description{
+    width: 65vw;
+    margin: 10vh auto auto auto;
+    display: flex;
+    padding: 1em;
+}
+
+.single-business-right{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.single-business-text{
+    line-height: 1.5rem;
+}
+.single-business-img{
+    width:100%;
+}
+
+.single-business-left{
+    flex-basis: 50%;
+    margin:1em;
+    display:flex;
+    justify-content: center;
+}
+
+.single-services-content{
+    width: 65vw;
+    margin: 10% auto 20vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-service-items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:0 0 0 0;
+}
+#singleServicesLabel{
+    font-size:3rem;
+    margin: 0 0 2em 0;
+    color: rgb(31, 31, 31);
+}
+
+.single-services-item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color:#4dadd6;
+    margin:0 .3em 0 .3em;
+    height: 35vh;
+    border-radius: 15px;
+}
+
+.single-service-item-content{
+    height: 25%;
+    background-color: antiquewhite;
+    margin: 0 0 0 0;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15% 0 15% 0;
+}
+
+.single-service-item-label{
+    font-size: 1.3rem;
+    color: rgb(31, 31, 31);
+}
+.single-service-item-button{
+    background-color:#FFB72B;
+    border:none;
+    padding:.7em 2em .7em 2em;
+    font-size: 1.2rem;
+    color:white;
+    margin: 1em 0 0 0;
+    border-radius: 25px;
+}
+
+.single-review-wrap{
+    width:65vw;
+    margin: auto auto 20vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.single-review-label{
+    font-size: 3rem;
+    margin:0 0 1em 0;
+}
+
+.single-review-content-wrap{
+    display:flex;
+}
+.single-review-item{
+    border: solid black 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction:column;
+    margin: 0 .4em 0 .4em;
+    align-items: center;
+    flex-basis: 33%;
+    padding:1em 1.5em 1em 1.5em;
+}
+
+.single-review-text{
+    word-spacing: .2rem;
+    line-height: 1.7em;
+}
+
+.single-review-name{
+    margin: auto 0 0 0 ;
+    font-weight: 100;
+}
+
+.single-footer{
+    display:flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fcb900;
+    padding:1.5em 0 1.5em 0;
+}
+
+.single-about-hero-wrap{
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(http://friendlyarborrestoration.com/wp-content/uploads/2021/12/mathew-schwartz-8xhnoY5ua9o-unsplash-scaled.jpg);
+}
+
+.single-about-hero{
+    width:65vw;
+    display: flex;
+}
+
+.single-about-label-wrap{
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+}
+#singleAboutLabel{
+    color: white;
+    font-size: 5rem;
+}
+
+.single-about-number-wrap{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.single-about-number{
+    display:flex;
+    flex-direction: column;
+    background-color: #fcb900;
+    padding: 2em;
+}
+
+.single-about-number> h1, h2 {
+    color:white;
+}
+
+.single-about-number> h2 {
+    margin: 0 0 1em 0;
+}
+
+.single-about-content{
+    width: 55vw;
+    margin: 5em auto 5em auto;
+    display: flex;
+}
+
+.single-about-content-text{
+    flex-basis: 70%;
+}
+
+#singleAboutContentLabel{
+    color: rgb(31, 31, 31);
+    font-size: 2.5rem;
+}
+
+.single-about-content-img-wrap {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.singleAboutContentImg {
+    max-width: 100%;
+}
+
+#singleAboutText{
+    max-width: 25vw;
+    line-height: 2rem;
+    color: rgb(31, 31, 31)
+}
+
+.single-blog-wrap{
+    margin:3em auto 3em auto;
+    width: 55vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-blog {
+    margin: 3em auto 3em auto;
+    width: 75%;
+}
+
+.single-blog-category{
+    color:#FFB72B;
+}
+
+.single-blog-more-link{
+    color:#FFB72B;
+}
+
+.single-contact-wrap{
+    display:flex;
+    flex-direction: column;
+    height: 79.54vh;
+}
+
+.single-contact-hero{
+    flex-basis: 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url(http://friendlyarborrestoration.com/wp-content/uploads/2021/12/mathew-schwartz-8xhnoY5ua9o-unsplash-scaled.jpg);
+}
+
+.single-contact-content{
+    flex-basis: 50%;
+    display: flex;
+    }
+
+.single-contact-label-wrap{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-contact-content-wrap{
+    display: flex;
+    width: 65vw;
+
+}
+
+#singleContactLabel{
+    font-size: 5rem;
+    color: white;
+}
+
+.single-contact-number-wrap{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.single-contact-number{
+    display:flex;
+    flex-direction: column;
+    background-color: #fcb900;
+    padding: 2em;
+    width:50%;
+}
+.single-contact-number > h1, h2 {
+    color: white;
+}
+.single-contact-number > h2 {
+    margin:  0 0 1.5em 0;
+}
+
+
+.single-contact-content-wrap2{
+    margin: auto;
+    width:65vw;
+    display: flex;
+}
+
+.single-contact-spacer{
+    flex-basis: 50%;
+}
+
+#singleDropdown {
+    margin-right: 1.3em;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.single-header-drop {
+    margin: 0 .5em 0 1.3em;
+    color: white;
+    cursor: pointer;
+}
+
+.single-blog{
+    margin-top: 4em;
+    padding-bottom: 4em;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.single-contact-info{
+    width: 65vw;
+    margin: 3em auto 3em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-number-wrap{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+#contactNumber{
+    margin: 0 3em 0 0;
+}
+
+.contact-follow-wrap{
+    display: flex;
+}
+
+.contact-follow-icon{
+    margin: 1.5em 2em 0 0;
+}
+
+#followInfo{
+    margin-top: 2em;
+}
+
+.multi-header-top{
+    background-image: url("C:\Users\Sebastian Barkan\updatedSSG\src\ssgnlp\src\images\more-footer-bg.jpg");
+    width: 100vw;
+    height: 6vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 7px solid #183180;
+    display: flex;
+    align-items: center;
+}
+
+.multi-header-top-text{
+    margin:0 2em  0 auto;
+    color:white;
+}
+
+#phoneIcon{
+    font-size: 1.5rem;
+    color: white;
+    margin-right: .5em;
+}
+
+.multi-header-phone-wrap{
+    display: flex;
+    background-color: rgb(233,28,36);
+    align-items: center;
+    height:100%;
+    padding: 0 1em 0 1em;
+}
+
+.multi-header-bottom{
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+
+.multi-header-bottom-link{
+    padding: 4em 3.5em 4em 0;
+    font-weight: 750;
+    text-decoration: #0075c6 2px underline;
+    text-underline-offset: .5em;
+}
+
+#multiHeaderLogo{
+    margin:0 auto 0 1em;
+}
+
+.multi-header-hero{
+    height: 50vh;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .6) ), url("https://www.restorationdoctorus.com/wp-content/uploads/2020/10/Header03.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.multi-header-hero-content{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.multi-header-hero-title{
+    color:white;
+    font-size: 4rem;
+    max-width: 50%;
+}
+
+.multi-company-description-wrap{
+    width: 100vw;
+    background-color: white;
+    padding:2.5em 0 2.5em 0;
+
+}
+
+.multi-company-description{
+    max-width: 80%;
+    line-height: 2rem;
+}
+
+.multi-company-description-container{
+    border-bottom: 2px solid #a5a5a5;
+    padding:2.5em 0 2.5em 0;
+    margin: auto 20% auto 20%;
+    background-color: white;
+}
+.multi-company-description-wrap{
+
+}
+.multi-company-description-wrap-2{
+    width: 100vw;
+    background-color: #f9f9f9;
+    padding: 5em 0 5em 0;
+}
+
+.multi-company-description-container-2{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    margin: 0 20% 0 20%;
+
+}
+
+.multi-testimonial-wrap{
+    width: 100vw;
+    padding: 2.5em 0 2.5em 0;
+    background-color:white;
+}
+
+.multi-testimonial-container{
+    margin: 0 20% 0 20%;
+}
+
+.multi-testimonial-item{
+    margin: 2em 0 0 0;
+}
+
+
+.multi-testimonial-subheading{
+    margin: 0 0 1em 0;
+}
+
+.multi-testimonial-hr{
+    width: 25%;
+    margin: 1.2em auto 1.2em 0;
+    padding:0;
+    height: 3px;
+    background-color: #d80f0f;
+    border: none;
+}
+
+#multiTestimonialSpan{
+    color:#0062B0;
+}
+
+.multi-testimonial-author{
+    color:#fd5a00;
+
+}
+
+.multi-company-description-3-wrap{
+    width: 100vw;
+    padding: 2.5em 0 2.5em 0;
+    background-image: url("https://www.restorationdoctorus.com/wp-content/themes/child-theme/images/boxed-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.multi-company-description-3-container{
+    margin: 0 20% 0 20%;
+    padding:3em;
+    box-shadow:0 0 5px #000;
+    background-color:white;
+}
+
+.multi-company-description-3-title{
+    color:#0062B0;
+    margin: 0 0 1em 0;
+}
+
+.multi-company-description-3-text{
+    line-height: 2rem;
+    margin: 0 1em 0 0;
+    max-width: 100%;
+}
+
+.multi-company-description-3-sidecontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://www.restorationdoctorus.com/wp-content/uploads/2020/10/Header03.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+.multi-company-description-3-content{
+    display: flex;
+    justify-content: center;
+}
+
+.multi-company-description-3-buttonwrap{
+    margin: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.multi-company-description-3-link-1{
+    color:white;
+}
+.multi-company-description-3-link-2{
+    color:#ff6a00;
+}
+
+
+.multi-company-description-3-linkwrap-1{
+    padding:1em 2em 1em 2em;
+    margin: 0 .3em 0 .3em;
+    background-color: #ff6a00;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.multi-company-description-3-linkwrap-2{
+    padding:1em 2em 1em 2em;
+    margin: 0 .3em 0 .3em;
+    background-color: white;
+    border: 2px solid #ff6a00;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.multi-company-description-3-bottomcontent{
+    display: flex;
+    margin: 1em 0 0 0;
+    justify-content:center;
+    align-items: center;
+}
+
+.multi-company-description-title{
+    margin: 0 0 1em 0;
+}
+
+.multi-company-img-wrap{
+    background-color: white;
+    width: 100vw;
+}
+
+.multi-company-img-container{
+    margin: 0 20% 0 20%;
+    background-image: url("https://www.restorationdoctorus.com/wp-content/uploads/2020/10/Header03.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
+}
+
+.multi-footer-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.multi-footer-top{
+    background-image: url("https://www.restorationdoctorus.com/wp-content/themes/child-theme/images/more-footer-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2em;
+    border-top: 7px solid #183180;
+}
+
+.multi-footer-top-text{
+    color: white;
+    margin: 0 1em 0 0;
+}
+.multi-footer-top-icon{
+    color: white;
+    margin:0 .5em 0 0;
+    font-size: 1.5rem;
+}
+.multi-footer-top-number{
+    color: white;
+}
+.multi-footer-center{
+    width: 100vw;
+    background-color: white;
+}
+
+.multi-footer-center-links-container {
+    display: flex;
+    justify-content: center;
+    margin: 5% 20% 5% 20%;
+
+}
+
+.multi-footer-center-links-wrap{
+    margin: 0 5em 0 5em;
+}
+
+.multi-footer-center-link{
+    color: #0062B0;
+    margin: 0 0 .3em 0;
+    font-weight:800;
+    font-size: .8rem;
+}
+
+.multi-footer-bottom{
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    background-color: white;
+    justify-content:space-around;
+}
+
+.multi-footer-bottom-center{
+    display: flex;
+    flex-direction: column;
+    margin: 0 4em 0 4em;
+}
+
+.multi-footer-bottom-center-link{
+    color: #0062B0;
+    margin: 0 0 .3em 0;
+}
+
+.multi-footer-center-icon{
+    color: #0062B0;
+}
+.multi-footer-icons-wrap{
+    display: flex;
+}
+
+.multi-input-form{
+    display: flex;
+    flex-direction: column;
+    width:15vw;
+    margin: auto;
+}
