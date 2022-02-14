@@ -3,22 +3,27 @@ import * as React from "react";
 import Header from "../components/header";
 import './index.css';
 import { Configuration, OpenAIApi } from "openai";
+import { replace } from "formik";
 
 
   const IndexPage = () => {
-   
-   {/*} const runOpenAi = async() => {
-      const { Configuration, OpenAIApi } = require("openai");
-      const configuration = new Configuration({
-        organization: process.env.KEY,
-        apiKey:  process.env.KEY,
+
+    const configuration = new Configuration({
+      organization: "org-hDGFHwWvcWRYVDKoNqibOYzU",
+      apiKey:  process.env.KEY,
+    });
+    const openai = new OpenAIApi(configuration);
+
+    const runOpenAi = async() => {
+      const response = await openai.createCompletion("text-davinci-001", {
+        prompt: "Say this is a test",
+        max_tokens: 5,
       });
-      const openai = new OpenAIApi(configuration);
-      const response = await openai.listEngines();
       console.log(response)
     }
+ 
     
-  runOpenAi()*/}
+  runOpenAi()
   
   return (
    <>

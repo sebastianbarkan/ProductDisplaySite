@@ -23,7 +23,7 @@ function MultiHeader(props) {
             </div>
             <div className='multi-header-hero'>
                 <div className='multi-header-hero-content'>
-                    <h1 className='multi-header-hero-title'>Water and Fire Damage Restoration</h1>
+                    <h1 className='multi-header-hero-title'>{props.headerText}</h1>
                 </div>
             </div>
         </div>
